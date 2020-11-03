@@ -22,12 +22,12 @@ contract AttackVector {
     return textField;
   }
 
-  function getGoodValidatedText() public view returns (string memory) {
+  function getValidatedText() public view returns (string memory) {
     if(checkString(textField)){
         return textField;
     }
 
-    return "Oh no, someone put nasty text in here,!!!";
+    return "Oh no, someone put nasty text in here!!!";
   }
 
   function checkString(string memory str) private pure returns (bool){

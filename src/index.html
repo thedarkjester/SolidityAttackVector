@@ -46,10 +46,11 @@
       Retrieve the text from the contract stored on the blockchain, <b>and use the .html(textGoesHere) </b>method
       <div id="getTextDiv" class="row text-center"><button class="btn-primary btn-getText" id="getText">Get the attack text and use html setter</button></div>
       <br><br>
+      Retrieve the text from the contract stored on the blockchain, <b>and use the safer .text(textGoesHere) </b>method
       <div id="getTextDiv2" class="row text-center" ><button class="btn-primary btn-getText" id="getSafeText">Get the attack text and use text setter</button></div>
       <div id="safeDiv" class="row text-center"></div><BR><BR>
-
-       <button class="btn-primary btn-setText" id="getGoodValidatedText">Get good text via the contract</button><br><BR>
+       checkString function checking text is safe in the contract on the way out<BR>
+       <button class="btn-primary btn-setText" id="getValidatedText">Get bad text validated text via the contract on the way out for 0 gas</button><br><BR>
         <div id="attackedDivErrorMessage" class="row text-center"></div>
     </div>
 

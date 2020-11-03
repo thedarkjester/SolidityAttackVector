@@ -49,7 +49,7 @@ else {
     $(document).on('click', '#setText', App.handleSetText);
     $(document).on('click', '#getText', App.handleGetText);
     $(document).on('click', '#getSafeText', App.handleSafeGetText);
-    $(document).on('click', '#getGoodValidatedText', App.getGoodValidatedText);
+    $(document).on('click', '#getValidatedText', App.getValidatedText);
     
   },  
   getGoodValidatedText: function(event) {
@@ -62,7 +62,7 @@ else {
     contractInstance = instance;
 
     // store the evil script on the blockchain
-    return contractInstance.getGoodValidatedText();
+    return contractInstance.getValidatedText();
     })
     .then(function(retrievedData){
       $("#attackedDivErrorMessage").html(retrievedData);
