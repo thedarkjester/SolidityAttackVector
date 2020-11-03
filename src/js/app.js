@@ -65,7 +65,7 @@ else {
     return contractInstance.getGoodValidatedText();
     })
     .then(function(retrievedData){
-      $("#attackedDiv").html(retrievedData);
+      $("#attackedDivErrorMessage").html(retrievedData);
     }).catch(function(err) {
       console.log(err.message);
     });
