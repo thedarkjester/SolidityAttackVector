@@ -22,7 +22,7 @@ A proof of concept can be seen in the sample repository provided ( [Sample code]
 
 `contractInstance.setTextField("Nice text<script>alert('I just did a silent javascript drive-by attack');</script>");`
 
-This, when viewed and displayed on the dApp using `.html()` or ``.innerHTML()`(or some other framework that modifies the DOM) would perform the drive-by attack possibly infecting users.  
+This, when viewed and displayed on the dApp using `.html()` or `.innerHTML()`(or some other framework that modifies the DOM) would perform the drive-by attack possibly infecting users.  
   
 Some attacks could be to fake the MetaMask plugin, add a key-logger or others.
 
@@ -33,7 +33,7 @@ Some attacks could be to fake the MetaMask plugin, add a key-logger or others.
 
 ### Off-chain validation
 
-It is possible to use the .text() method of JQuery (or similar JavaScript libraries) to set the value as text rather than allowing it to be written as HTML. 
+It is possible to use the `.text()` method of JQuery (or similar JavaScript libraries) to set the value as text rather than allowing it to be written as HTML. 
 
 An example of this can be seen in the sample code provided:
 `$("#safeDiv").text(retrievedData);`
