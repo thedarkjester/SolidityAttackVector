@@ -8,7 +8,7 @@ Additionally, in order to avoid centralisation (a tenet of blockchain itself ) t
 tl;dr - validate and replace the string fields in your contract on the way out, saving gas, and preventing users getting infected.
 
 ### Some background on JavaScript attacks
-The type of attack and exploit this article refers to in particular is a [drive-by download](https://www.exabeam.com/information-security/drive-by-download/ "Drive by download") / [DOM Based XSS] (https://owasp.org/www-community/attacks/DOM_Based_XSS "Cross-site scripting") attack, where a modification of the Document Object Model (DOM) is modified to inject and download malicious script.
+The type of attack and exploit this article refers to in particular is a [drive-by download](https://www.exabeam.com/information-security/drive-by-download/ "Drive by download") / [DOM Based XSS](https://owasp.org/www-community/attacks/DOM_Based_XSS "Cross-site scripting") attack, where a modification of the Document Object Model (DOM) is modified to inject and download malicious script.
 
 
 ### Exploiting the string upload in a contract
@@ -18,7 +18,7 @@ While it is possible to validate the text on the user interface with JavaScript 
 * Copying the site code and removing the validation and then uploading to the smart contract
 * Creating your own call and directly setting the value on the contract outside of the dApp entirely
 
-A proof of concept can be seen in the sample repository provided ([Sample code] (https://github.com/thedarkjester/SolidityAttackVector "Github sample"))
+A proof of concept can be seen in the sample repository provided ( [Sample code](https://github.com/thedarkjester/SolidityAttackVector "Github sample") )
 
 `contractInstance.setTextField("Nice text<script>alert('I just did a silent javascript drive-by attack');</script>");`
 
