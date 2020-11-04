@@ -52,7 +52,7 @@ else {
     $(document).on('click', '#getValidatedText', App.getValidatedText);
     
   },  
-  getGoodValidatedText: function(event) {
+  getValidatedText: function(event) {
     event.preventDefault();
     var contractInstance;
 
@@ -65,7 +65,7 @@ else {
     return contractInstance.getValidatedText();
     })
     .then(function(retrievedData){
-      $("#attackedDivErrorMessage").html(retrievedData);
+      $("#attackedDivErrorMessage").text(retrievedData);
     }).catch(function(err) {
       console.log(err.message);
     });

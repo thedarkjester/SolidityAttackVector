@@ -22,7 +22,7 @@ contract AttackVector {
     return textField;
   }
 
-  function getValidatedText() public view returns (string memory) {
+  function getGoodValidatedText() public view returns (string memory) {
     if(checkString(textField)){
         return textField;
     }
