@@ -22,6 +22,9 @@ contract AttackVector {
     return textField;
   }
 
+  /// Return the stored textField.
+  /// @return the stored textField
+  /// @dev uses the checkString and if not found to be safe returns other text
   function getGoodValidatedText() public view returns (string memory) {
     if(checkString(textField)){
         return textField;
@@ -30,6 +33,9 @@ contract AttackVector {
     return "Oh no, someone put nasty text in here!!!";
   }
 
+  /// Validates and returns safe text
+  /// @return returns whether or not the text is safe
+  /// @dev this is limited to letters and numbers, but could be modified to allow other options like ! or even replace with safer options
   function checkString(string memory str) private pure returns (bool){
     bytes memory b = bytes(str);
 
