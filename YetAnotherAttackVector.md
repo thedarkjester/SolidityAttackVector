@@ -94,4 +94,4 @@ Using a view/getter that checks and replaces the text with safer text can cost 0
 
 There may be other ways to perform this validation/replacement and comments and suggestions are welcome. 
 
-A sample of the attack (no malicious code) can be found here: [Sample code](https://github.com/thedarkjester/SolidityAttackVector "Github sample"). This will be actively worked on, extended to cater for more characters and exposed as an on chain Library for others contracts to use.
+A sample of the attack (no malicious code) can be found here: [Sample code](https://github.com/thedarkjester/SolidityAttackVector "Github sample"). This will be actively worked on, extended to cater for more characters and exposed as an on-chain Library for others contracts to use.
