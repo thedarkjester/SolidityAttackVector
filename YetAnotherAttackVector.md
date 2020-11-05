@@ -58,7 +58,6 @@ function checkString(string memory str) private pure returns (bool){
         bytes1 char = b[i];
 
         if(
-            !(char >= 0x30 && char <= 0x39) &&
             !(char >= 0x30 && char <= 0x39) && //9-0
             !(char >= 0x41 && char <= 0x5A) && //A-Z
             !(char >= 0x61 && char <= 0x7A) && //a-z
